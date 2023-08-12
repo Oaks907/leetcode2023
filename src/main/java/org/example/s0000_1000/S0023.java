@@ -2,9 +2,7 @@ package org.example.s0000_1000;
 
 import com.google.common.collect.Lists;
 import org.example.bo.ListNode;
-import org.example.util.ListNodeUtil;
-
-import java.util.List;
+import org.example.util.PrintUtil;
 
 public class S0023 {
     public ListNode mergeKLists(ListNode[] lists) {
@@ -56,6 +54,6 @@ public class S0023 {
 
         S0023 s0023 = new S0023();
         ListNode listNode = s0023.mergeKLists(arr);
-        ListNodeUtil.print(listNode);
+        PrintUtil.printListNode(listNode);
     }
 }

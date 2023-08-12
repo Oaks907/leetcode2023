@@ -2,9 +2,9 @@ package org.example.util;
 
 import org.example.bo.ListNode;
 
-public class ListNodeUtil {
+public class PrintUtil {
 
-    public static void print(ListNode node) {
+    public static void printListNode(ListNode node) {
         System.out.print("当前队列值为:");
         if (node == null) {
             return;
