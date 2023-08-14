@@ -16,5 +16,6 @@ public class PrintUtil {
 
             node = node.next;
         }
+        System.out.println();
     }
 }
