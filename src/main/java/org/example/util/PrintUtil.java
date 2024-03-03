@@ -3,6 +3,9 @@ package org.example.util;
 import org.example.bo.ListNode;
 import org.example.bo.TreeNode;
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 public class PrintUtil {
 
     public static void printListNode(ListNode node) {
@@ -11,7 +14,7 @@ public class PrintUtil {
             return;
         }
 
-        while(node != null) {
+        while (node != null) {
 
             System.out.print(node.val + "->");
 
@@ -31,6 +34,43 @@ public class PrintUtil {
         }
 
         System.out.println();
+    }
+
+    public static TreeNode constructTree(Integer[] array) {
+        if (array == null || array.length == 0 || array[0] == null) {
+            return null;
+        }
+
+        int index = 0;
+        int length = array.length;
+
+        TreeNode root = new TreeNode(array[0]);
+        Deque<TreeNode> nodeQueue = new LinkedList<>();
+        nodeQueue.offer(root);
+        TreeNode currNode;
+        while (index < length) {
+            index++;
+            if (index >= length) {
+                return root;
+            }
+            currNode = nodeQueue.poll();
+            Integer leftChild = array[index];
+            if (leftChild != null) {
+                currNode.left = new TreeNode(leftChild);
+                nodeQueue.offer(currNode.left);
+            }
+            index++;
+            if (index >= length) {
+                return root;
+            }
+            Integer rightChild = array[index];
+            if (rightChild != null) {
+                currNode.right = new TreeNode(rightChild);
+                nodeQueue.offer(currNode.right);
+            }
+        }
+
+        return root;
     }
 
     // 用于获得树的层数
@@ -66,7 +106,7 @@ public class PrintUtil {
 
 
     public static void printTreeNode(TreeNode root) {
-        if (root == null){
+        if (root == null) {
             System.out.println("EMPTY!");
             return;
         }
