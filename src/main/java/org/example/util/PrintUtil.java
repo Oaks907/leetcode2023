@@ -38,6 +38,21 @@ public class PrintUtil {
         System.out.println();
     }
 
+    public static void printArr(int[][] arr) {
+        if (null == arr) {
+            return;
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[0].length; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+    }
+
     public static void printIntArr(int[] arr) {
         System.out.print("数组为：");
         if (null == arr) {
