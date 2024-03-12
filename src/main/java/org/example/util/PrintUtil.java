@@ -50,6 +50,24 @@ public class PrintUtil {
         System.out.println();
     }
 
+    public static void printArr(int[][][] arr) {
+        if (null == arr) {
+            return;
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[0].length; j++) {
+                for (int k = 0; k < arr[0][0].length; k++) {
+                    System.out.print(arr[i][j][k] + " ");
+                }
+                System.out.println();
+            }
+            System.out.println("---------");
+        }
+
+        System.out.println();
+    }
+
     public static void printArr(int[][] arr) {
         if (null == arr) {
             return;
