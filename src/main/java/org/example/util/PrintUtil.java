@@ -38,6 +38,18 @@ public class PrintUtil {
         System.out.println();
     }
 
+    public static void printArr(boolean[] arr) {
+        if (null == arr) {
+            return;
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
+        System.out.println();
+    }
+
     public static void printArr(int[][] arr) {
         if (null == arr) {
             return;
