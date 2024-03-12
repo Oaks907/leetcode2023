@@ -33,6 +33,6 @@ public class s2682_FindtheLosersoftheCircularGame {
     public static void main(String[] args) {
         s2682_FindtheLosersoftheCircularGame exe = new s2682_FindtheLosersoftheCircularGame();
 //        PrintUtil.printIntArr(exe.circularGameLosers(4, 4));
-        PrintUtil.printIntArr(exe.circularGameLosers(5, 2));
+        PrintUtil.printArr(exe.circularGameLosers(5, 2));
     }
 }

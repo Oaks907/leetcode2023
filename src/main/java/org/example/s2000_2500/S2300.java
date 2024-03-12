@@ -97,8 +97,8 @@ public class S2300 {
         int[] potions = {1, 2, 3, 4, 5};
         int success = 7;
 
-        PrintUtil.printIntArr(successfulPairs(spells, potions, success));
-        PrintUtil.printIntArr(successfulPairs_2(spells, potions, success));
+        PrintUtil.printArr(successfulPairs(spells, potions, success));
+        PrintUtil.printArr(successfulPairs_2(spells, potions, success));
     }
 
 

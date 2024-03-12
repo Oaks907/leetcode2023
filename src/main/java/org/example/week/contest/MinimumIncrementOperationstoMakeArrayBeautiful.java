@@ -25,7 +25,7 @@ public class MinimumIncrementOperationstoMakeArrayBeautiful {
 
         if (to >= nums.length) {
             minAddCount = Math.min(minAddCount, addCount);
-            PrintUtil.printIntArr(nums);
+            PrintUtil.printArr(nums);
             System.out.println("current minAddCount:" + minAddCount);
             return;
         }

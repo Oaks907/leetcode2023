@@ -38,7 +38,7 @@ public class Coin_4 {
             }
         }
 
-        PrintUtil.printIntArr(memo);
+        PrintUtil.printArr(memo);
 
         return memo[k];
     }

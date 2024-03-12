@@ -83,7 +83,7 @@ public class PrintUtil {
         System.out.println();
     }
 
-    public static void printIntArr(int[] arr) {
+    public static void printArr(int[] arr) {
         System.out.print("数组为：");
         if (null == arr) {
             return;

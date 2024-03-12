@@ -11,7 +11,7 @@ public class S0338_CountingBits {
     @Test
     public void test() {
         S0338_CountingBits exe = new S0338_CountingBits();
-        PrintUtil.printIntArr(exe.countBits(16));
+        PrintUtil.printArr(exe.countBits(16));
     }
 
 

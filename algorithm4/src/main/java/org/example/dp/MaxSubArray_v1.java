@@ -27,7 +27,7 @@ public class MaxSubArray_v1 {
             max = Math.max(dp[i], max);
         }
 
-        PrintUtil.printIntArr(dp);
+        PrintUtil.printArr(dp);
 
         return max;
     }
