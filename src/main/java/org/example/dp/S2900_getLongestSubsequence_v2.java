@@ -52,7 +52,7 @@ public class S2900_getLongestSubsequence_v2 {
                 }
             }
 
-            PrintUtil.printIntArr(dp);
+            PrintUtil.printArr(dp);
 
             if (dp[i] > maxSubsequenceLength) {
                 maxSubsequenceLength = dp[i];
