@@ -7,12 +7,12 @@ import org.junit.Test;
  * @Author Administrator
  * @Date 2024/3/5 22:34
  **/
-public class A0801_waysToStep {
+public class A08_01_waysToStep {
 
 
     @Test
     public void test() {
-        A0801_waysToStep exe = new A0801_waysToStep();
+        A08_01_waysToStep exe = new A08_01_waysToStep();
         System.out.println(exe.waysToStep(5));
     }
 
