@@ -96,6 +96,19 @@ public class PrintUtil {
         System.out.println();
     }
 
+    public static void printArr(long[] arr) {
+        System.out.print("数组为：");
+        if (null == arr) {
+            return;
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
+        System.out.println();
+    }
+
     public static TreeNode constructTree(Integer[] array) {
         if (array == null || array.length == 0 || array[0] == null) {
             return null;
